@@ -1,6 +1,6 @@
 #!/bin/sh -ef
 #
-# kiss-size - Show the size on disk for a package.
+# kiss-depends - Display a package's dependencies.
 
 db_dir=$KISS_ROOT/var/db/kiss/installed/${1-null}
 
