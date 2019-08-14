@@ -8,3 +8,4 @@ A collection of simple scripts to interface with the KISS package system.
 - `kiss-depends`: Display a package's dependencies.
 - `kiss-owns`: Check which package owns a file.
 - `kiss-revdepends`: Display packages which depend on package.
+- `kiss-fetch`: Simple info tool.
