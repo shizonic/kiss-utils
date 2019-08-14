@@ -59,27 +59,27 @@ packages() {
 }
 
 main() {
+    c0=[m
     c1=[34\;1m
     c2=[35\;1m
     c3=[37\;1m
-    re=[m
 
-    distro
-    memory
-    uptime
-    kernel
-    model
-    packages
     hostname
+    distro
+    model
+    kernel
+    uptime
+    packages
+    memory
 
     printf '%s\n' "\
-${c1}    ___${re}       ${c1}${USER}${re}@${c1}${hostname}
-${c1}   (${c3}.· ${c1}|${re}      ${c2}os${re}:     $os
-${c1}   (${c2}<> ${c1}|${re}      ${c2}host${re}:   $model
-${c1}  / ${c3}__  ${c1}\\${re}     ${c2}kernel${re}: $kernel
-${c1} ( ${c3}/  \\ ${c1}/|${re}    ${c2}uptime${re}: $uptime
-${c2}_${c1}/\\ ${c3}__)${c1}/${c2}_${c1})${re}    ${c2}pkgs${re}:   $packages
-${c2}\/${c1}-____${c2}\/${re}     ${c2}memory${re}: $memory
+${c1}    ___${c0}       ${c1}${USER}${c0}@${c1}${hostname}
+${c1}   (${c3}.· ${c1}|${c0}      ${c2}os${c0}:     $os
+${c1}   (${c2}<> ${c1}|${c0}      ${c2}host${c0}:   $model
+${c1}  / ${c3}__  ${c1}\\${c0}     ${c2}kernel${c0}: $kernel
+${c1} ( ${c3}/  \ ${c1}/|${c0}    ${c2}uptime${c0}: $uptime
+${c2}_${c1}/\ ${c3}__)${c1}/${c2}_${c1})${c0}    ${c2}pkgs${c0}:   $packages
+${c2}\/${c1}-____${c2}\/${c0}     ${c2}memory${c0}: $memory
 "
 }
 
