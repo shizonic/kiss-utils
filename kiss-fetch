@@ -26,7 +26,7 @@ memory() {
         esac
     done < /proc/meminfo
 
-    memory="$((mem_used / 1024))MiB / $((mem_total / 1024)))MiB"
+    memory="$((mem_used / 1024))MiB / $((mem_total / 1024))MiB"
 }
 
 uptime() {
