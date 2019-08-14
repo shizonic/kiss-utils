@@ -49,6 +49,10 @@ model() {
     read -r model < /sys/devices/virtual/dmi/id/product_version
 }
 
+hostname() {
+    read -r hostname < /proc/sys/kernel/hostname
+}
+
 packages() {
     set -- /var/db/kiss/installed/*/
     packages=$#
@@ -66,9 +70,10 @@ main() {
     kernel
     model
     packages
+    hostname
 
     printf '%s\n' "\
-${c1}    ___${re}       ${c1}${USER}${re}@${c1}$(hostname)
+${c1}    ___${re}       ${c1}${USER}${re}@${c1}${hostname}
 ${c1}   (${c3}.· ${c1}|${re}      ${c2}os${re}:     $os
 ${c1}   (${c2}<> ${c1}|${re}      ${c2}host${re}:   $model
 ${c1}  / ${c3}__  ${c1}\\${re}     ${c2}kernel${re}: $kernel
