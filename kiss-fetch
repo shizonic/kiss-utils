@@ -36,9 +36,9 @@ uptime() {
     h=$((s / 60 / 60 % 24))
     m=$((s / 60 % 60))
 
-    [ "$d" = 0 ] || uptime="$uptime${d}d "
-    [ "$h" = 0 ] || uptime="$uptime${h}h "
-    [ "$m" = 0 ] || uptime="$uptime${m}m "
+    [ "$d" = 0 ] || uptime="${uptime}${d}d "
+    [ "$h" = 0 ] || uptime="${uptime}${h}h "
+    [ "$m" = 0 ] || uptime="${uptime}${m}m "
 }
 
 kernel() {
@@ -50,7 +50,8 @@ model() {
 }
 
 packages() {
-    packages=$(kiss l | wc -l)
+    set -- /var/db/kiss/installed/*/
+    packages=$#
 }
 
 main() {
