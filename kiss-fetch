@@ -66,7 +66,7 @@ main() {
     model
     packages
 
-    printf '\e[1m%s\n' "\
+    printf '%s\n' "\
 ${c1}    ___${re}       ${c1}${USER}${re}@${c1}$(hostname)
 ${c1}   (${c3}.· ${c1}|${re}      ${c2}os${re}:     $os
 ${c1}   (${c2}<> ${c1}|${re}      ${c2}host${re}:   $model
