@@ -11,5 +11,5 @@ for pkg in *; do
         make|busybox|ca-certificates) continue ;;
     esac
 
-    grep -q "^$pkg" ./*/depends || printf '%s\n' "$pkg"
+    grep -q "^$pkg$" ./*/depends || printf '%s\n' "$pkg"
 done
