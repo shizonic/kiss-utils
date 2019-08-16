@@ -8,7 +8,7 @@ for pkg in *; do
     # Skip these packages.
     case $pkg in
         baseinit|baselayout|gcc|pkgconf|e2fsprogs|\
-        make|busybox|ca-certificates|bzip2|grub)
+        make|busybox|ca-certificates|bzip2|grub|automake)
                 continue
         ;;
     esac
