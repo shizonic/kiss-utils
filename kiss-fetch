@@ -1,4 +1,7 @@
 #!/bin/sh
+# shellcheck source=/dev/null
+#
+# kiss-fetch - Simple PURE POSIX sh fetch script.
 
 distro() {
     . /etc/os-release
