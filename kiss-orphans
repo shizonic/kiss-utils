@@ -7,7 +7,7 @@ cd "$KISS_ROOT/var/db/kiss/installed/"
 for pkg in *; do
     # Skip these packages.
     case $pkg in
-        baseinit|baselayout|gcc|\
+        baseinit|baselayout|gcc|pkgconf|\
         make|busybox|ca-certificates) continue ;;
     esac
 
