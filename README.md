@@ -3,6 +3,7 @@
 A collection of simple scripts to interface with the KISS package system.
 
 - `kiss-chroot`: Enter a KISS `chroot`.
+- `kiss-depends-finder`: Find missing dependencies by parsing 'ldd'.
 - `kiss-depends`: Display a package's dependencies.
 - `kiss-export`: Turn an installed package into a KISS tarball.
 - `kiss-fetch`: Simple info tool.
