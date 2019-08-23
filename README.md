@@ -13,3 +13,5 @@ A collection of simple scripts to interface with the KISS package system.
 - `kiss-owns`: Check which package owns a file.
 - `kiss-revdepends`: Display packages which depend on package.
 - `kiss-size`: Show the size on disk for an installed package.
+
+See: <https://getkiss.org/pages/package-system>
